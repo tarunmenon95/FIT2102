@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <h2 id="score"> Red Score: 0   Blue Score: 0</h2>
+        <h2 id="winner"> </h2>
+        <h3 id="res"></h3>
+        <svg id="canvas" width="800" height="800">
+            <rect id="playerPaddle" x="0" y="0" height="70" width="10"
+            style="stroke:darkblue; fill:deepskyblue"
+            transform="translate(780,325)">
+            </rect>
+            <rect id="enemyPaddle" x="0" y="0" height="70" width="10"
+            style="stroke:black; fill:crimson"
+            transform="translate(10,325)">
+            </rect>
+            <circle id ="ball" cx="0" cy="0" r="5" stroke="black" stroke-width="2" fill="white" 
+            transform="translate(400,400)"/>
+    </body>
+</html>
